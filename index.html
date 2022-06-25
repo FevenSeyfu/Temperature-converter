@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div id="main" class="card">
+                    <div class="card-content">
+                        <div class="card-title">Temperature Converter</div>
+                        <div class="card-subtitle">Format</div>
+                        <form action="#" id="format-form">
+                            <div id="choose-format">
+                                <p >
+                                    <label >
+                                      <input class="with-gap " name="temp-format" value="celsius" type="radio"  />
+                                      <span>Celsius</span>
+                                    </label>
+                                    <label>
+                                      <input class="with-gap"  name="temp-format" value="fahrenheit" type="radio" />
+                                      <span>Fahrenheit</span>
+                                    </label>
+                                    <label>
+                                      <input class="with-gap" name="temp-format" value="kelvin"  type="radio"  />
+                                      <span>Kelvin</span>
+                                    </label>
+                                </p>
+                            </div>
+                        </form>
+                        <form id="temp-form">
+                            <div >
+                                <div class="input-field col s12">
+                                    <input type="text" name="temp" id="temp">
+                                    <label for="temp">Temperature</label>
+                                </div>
+                                <input type="submit"
+                                    value="convert"
+                                    class="btn-small">
+                            </div>
+                        </form>
+                    </div>
+                   <div class="card-action">
+                       <div class="row">
+                           <div class="card-content ">
+                               <table class="highlight ">
+                                <thead>
+                                    <tr>
+                                        <th id="header1"></th>
+                                        <th id="header2"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="body1"></td>
+                                        <td id="body2"></td>
+                                    </tr>
+                                </tbody>
+                               </table>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
